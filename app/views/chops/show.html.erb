@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @chop %>
+
+<div>
+  <%= link_to "Edit this chop", edit_chop_path(@chop) %> |
+  <%= link_to "Back to chops", chops_path %>
+
+  <%= button_to "Destroy this chop", @chop, method: :delete %>
+</div>

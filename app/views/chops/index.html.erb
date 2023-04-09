@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Chops</h1>
+
+<div id="chops">
+  <% @chops.each do |chop| %>
+    <%= render chop %>
+    <p>
+      <%= link_to "Show this chop", chop %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New chop", new_chop_path %>
