@@ -65,6 +65,6 @@ class ChopsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def chop_params
-      params.require(:chop).permit(:solve, :solution)
+      params.require(:chop).permit(:solve, :solution, :category_id)
     end
 end
