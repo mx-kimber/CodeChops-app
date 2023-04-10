@@ -2,17 +2,19 @@
 <br>
 <font size="2px" style="font-family:georgia,garamond,serif;letter-spacing:1px;color:red;padding-left:8px;">| Ruby |</font><font size="2px" style="font-family:georgia,garamond,serif;letter-spacing:4px;color:red;padding:5px">SKILLS PRACTICE</font>
 <br>
-
+<br>
+<hr>
+  <%= link_to "Show categories & contents", categories_path%> |
+  <%= link_to "Show all chops", chops_path %>
 <hr>
 <p style="color: green"><%= notice %></p>
-
-<%= render @chop %>
+  <%= render @chop %>
+<hr>
 
 <div>
   <%= link_to "Edit this chop", edit_chop_path(@chop) %> |
-  <%= link_to "List all chops", chops_path %> |
-  <%= link_to "Create chop", new_chop_path %>
+  <%= link_to "Create new chop", new_chop_path %>
 <hr>
   <%= button_to "Destroy this chop", @chop, method: :delete %>
-<hr>
+
 </div>

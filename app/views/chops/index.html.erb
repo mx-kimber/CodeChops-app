@@ -4,16 +4,22 @@
 <br>
 <br>
 <hr>
-  <%= link_to "Create chop", new_chop_path %> | <%= link_to 'Create category', new_category_path %> | <%= link_to "Show categories & contents", categories_path%>
+  <%= link_to "Show categories & contents", categories_path%> |
+  <%= link_to 'Create category', new_category_path %> |
+  <%= link_to "Create chop", new_chop_path %>
 <hr>
-<font size:12pt, style="font-family:georgia,garamond,serif;letter-spacing:2px;color:red;padding:3px">To edit or destroy chops: click on 'Show this chop'</font>
-<br>
+
+<font size:12pt, style="font-family:georgia,garamond,serif;letter-spacing:2px;color:red;padding:3px">ALL CHOPS</font>
+<hr>
 <p style="color: green"><%= notice %></p>
 <div id="chops">
   <% @chops.each do |chop| %>
+
     <%= render chop %>
+
     <p>
       <%= link_to "Show this chop", chop %>
+<hr>
     </p>
   <% end %>
 </div>

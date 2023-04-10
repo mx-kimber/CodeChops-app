@@ -4,17 +4,19 @@
 <br>
 <br>
 <hr>
+  <%= link_to "Show categories & contents", categories_path%> |
+  <%= link_to 'Show all chops', chops_path %>
+<hr>
 <br>
 <p style="color: green"><%= notice %></p>
-
-<%= render @category %>
+  <%= render @category %>
+<br>
+<hr>
 
 <div>
   <%= link_to "Edit this category", edit_category_path(@category) %> |
-  <%= link_to 'Create category', new_category_path %> |
-  <%= link_to 'Show all chops', chops_path %> |
-  <%= link_to "Show categories & contents", categories_path%>
+  <%= link_to 'Create new category', new_category_path %>
 <hr>
   <%= button_to "Destroy this category", @category, method: :delete %>
-  <hr>
+
 </div>

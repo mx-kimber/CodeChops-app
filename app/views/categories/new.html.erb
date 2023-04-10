@@ -1,16 +1,15 @@
-<font size="8px" style="font-family:georgia,garamond,serif;letter-spacing:6px;padding:8px;padding">CodeChops</font>
+<font size="8px" style="font-family:georgia,garamond,serif;letter-spacing:6px;padding:8px">CodeChops</font>
 <br>
 <font size="2px" style="font-family:georgia,garamond,serif;letter-spacing:1px;color:red;padding-left:8px;">| Ruby |</font><font size="2px" style="font-family:georgia,garamond,serif;letter-spacing:4px;color:red;padding:5px">SKILLS PRACTICE</font>
 <br>
 <br>
 <hr>
-<div>
-  <%= link_to "Show catagories & contents", categories_path%> | <%= link_to "Show chops & edit", chops_path %>
-</div>
-
+  <%= link_to "Show categories & contents", categories_path%> | <%= link_to "Show all chops", chops_path %>
 <hr>
-<font size:12pt, style="font-family:georgia,garamond,serif;letter-spacing:2px;color:red;padding:3px">CREATE NEW CATEGORY</font>
+  <font size:12pt, style="font-family:georgia,garamond,serif;letter-spacing:2px;color:red;padding:1px">CREATE NEW CATEGORY</font>
+<hr>
 <p id="notice"><%= notice %></p>
-
 <%= render "form", category: @category %>
+<br>
+<hr>
 

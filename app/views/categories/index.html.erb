@@ -4,10 +4,13 @@
 <br>
 <br>
 <hr>
-<%= link_to "List all chops", chops_path %> | <%= link_to "Create chop", new_chop_path %> | <%= link_to 'Create category', new_category_path %>
+<%= link_to "Show all chops", chops_path %> |
+<%= link_to 'Create category', new_category_path %> |
+<%= link_to "Create chop", new_chop_path %>
 <hr>
 <font size:12pt, style="font-family:georgia,garamond,serif;letter-spacing:2px;color:red;padding:3px">CATEGORIES & CONTENTS</font>
-<p id="notice"><%= notice %></p>
+<hr>
+<p style="color: green"><%= notice %></p>
 <table>
   <thead>
     <tr>
@@ -22,12 +25,14 @@
       <tr>
         <td><%= category.name %>
       <br>
-        <%= link_to "Show / edit", category %></td>
+      <hr>
+        <%= link_to "Show this category", category %></td>
         <% category.chops.each do |chops| %>
+
           <td><%= chops.solve %></td>
+
         <% end %>
       </tr>
-
     <% end %>
   </tbody>
 </table>

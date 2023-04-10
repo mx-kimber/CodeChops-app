@@ -4,14 +4,12 @@
 <br>
 <br>
 <hr>
-  <%= link_to "See Chops", chops_path %> | <%= link_to "Create  category", new_category_path %> | <%= link_to "Show catagories & contents", categories_path%>
+  <%= link_to "Show categories & contents", categories_path%> | <%= link_to "Show all chops", chops_path %>
 <hr>
-<br>
-<font size:12pt, style="font-family:georgia,garamond,serif;letter-spacing:2px;color:red;padding:3px">CREATE NEW CHOP</font>
-<br>
-<br>
+  <font size:12pt, style="font-family:georgia,garamond,serif;letter-spacing:2px;color:red;padding:3px">CREATE NEW CHOP</font>
+<hr>
+<p id="notice"><%= notice %></p>
 <%= render "form", chop: @chop %>
-<div>
+<br>
 <hr>
 
-</div>
