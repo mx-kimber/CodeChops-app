@@ -8,10 +8,11 @@
   <%= link_to "Show categories & contents", categories_path%> |
   <%= link_to "Show all chops", chops_path %>
 <hr>
-<br>
+<font size:12pt, style="font-family:georgia,garamond,serif;letter-spacing:2px;color:red;padding:3px">CATEGORY:</font>
+<hr>
 <p style="color: green"><%= notice %></p>
   <%= render @category %>
-<br>
+
 <hr>
 <div>
   <%= link_to "Edit this category", edit_category_path(@category) %> |
