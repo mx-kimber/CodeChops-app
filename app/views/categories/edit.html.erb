@@ -1,7 +1,6 @@
-<font size="8px" style="font-family:georgia,garamond,serif;letter-spacing:6px;padding:8px;padding">CodeChops</font>
+<font size="8px" style="font-family:georgia,garamond,serif;letter-spacing:6px;padding:8px">CodeChops</font>
 <br>
-<font size="2px"
-  style="font-family:georgia,garamond,serif;letter-spacing:1px;color:red;padding-left:8px;"> | Ruby |</font>
+  <font size="2px" style="font-family:georgia,garamond,serif;letter-spacing:1px;color:red;padding-left:8px;"> | Ruby |</font>
   <font size="2px" style="font-family:georgia,garamond,serif;letter-spacing:4px;color:red;padding:5px">SKILLS PRACTICE</font>
 <br>
 <br>
@@ -9,13 +8,14 @@
   <%= link_to "Show all chops", chops_path %> |
   <%= link_to "Show all categories & content" %>
 <hr>
-<font size:12pt, style="font-family:georgia,garamond,serif;letter-spacing:2px;color:red;padding:3px">EDIT CATEGORY</font>
-<br>
+  <font size:12pt, style="font-family:georgia,garamond,serif;letter-spacing:2px;color:red;padding:3px">EDIT CATEGORY</font>
+<hr>
 <br>
   <%= render "form", category: @category %>
-<br>
+<hr>
 <div>
-  <%= link_to "Show this category", @category %> | <%= link_to "Create new category", new_category_path %>
+  <%= link_to "Show this category", @category %> |
+  <%= link_to "Create new category", new_category_path %> |
+  <%= link_to "Create new chop", new_chop_path %>
 </div>
-<br>
 <hr>

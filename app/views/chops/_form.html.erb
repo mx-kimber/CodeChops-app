@@ -26,6 +26,7 @@
     <%= form.select :category_id, options_for_select(Category.all.map { |category| [category.name, category.id]})%>
   </div>
 <br>
+<hr>
   <div>
     <%= form.submit %>
   </div>
