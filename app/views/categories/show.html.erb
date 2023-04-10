@@ -1,11 +1,20 @@
+<font size="8px" style="font-family:georgia,garamond,serif;letter-spacing:6px;padding:8px;padding">CodeChops</font>
+<br>
+<font size="2px" style="font-family:georgia,garamond,serif;letter-spacing:1px;color:red;padding-left:8px;">| Ruby |</font><font size="2px" style="font-family:georgia,garamond,serif;letter-spacing:4px;color:red;padding:5px">SKILLS PRACTICE</font>
+<br>
+<br>
+<hr>
+<br>
 <p style="color: green"><%= notice %></p>
 
 <%= render @category %>
 
 <div>
   <%= link_to "Edit this category", edit_category_path(@category) %> |
-  <%= link_to "Back to categories", categories_path %> |
-  <%= link_to 'New Category', new_category_path %>
-
+  <%= link_to 'Create category', new_category_path %> |
+  <%= link_to 'Show all chops', chops_path %> |
+  <%= link_to "Show categories & contents", categories_path%>
+<hr>
   <%= button_to "Destroy this category", @category, method: :delete %>
+  <hr>
 </div>

@@ -22,8 +22,7 @@
   </div>
 <br>
   <div>
-    <%= form.label :category %>
-<br>
+    <%= form.label "Category:" %>
     <%= form.select :category_id, options_for_select(Category.all.map { |category| [category.name, category.id]})%>
   </div>
 <br>

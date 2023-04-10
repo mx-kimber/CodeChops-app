@@ -1,7 +1,13 @@
+<font size="8px" style="font-family:georgia,garamond,serif;letter-spacing:6px;padding:8px;padding">CodeChops</font>
+<br>
+<font size="2px" style="font-family:georgia,garamond,serif;letter-spacing:1px;color:red;padding-left:8px;">| Ruby |</font><font size="2px" style="font-family:georgia,garamond,serif;letter-spacing:4px;color:red;padding:5px">SKILLS PRACTICE</font>
+<br>
+<br>
+<hr>
+<%= link_to "List all chops", chops_path %> | <%= link_to "Create chop", new_chop_path %> | <%= link_to 'Create category', new_category_path %>
+<hr>
+<font size:12pt, style="font-family:georgia,garamond,serif;letter-spacing:2px;color:red;padding:3px">CATEGORIES & CONTENTS</font>
 <p id="notice"><%= notice %></p>
-
-<h1>Categories</h1>
-
 <table>
   <thead>
     <tr>
@@ -14,15 +20,16 @@
   <tbody>
     <% @categories.each do |category| %>
       <tr>
-        <td><%= category.name %></td>
+        <td><%= category.name %>
+      <br>
+        <%= link_to "Show / edit", category %></td>
         <% category.chops.each do |chops| %>
           <td><%= chops.solve %></td>
         <% end %>
       </tr>
+
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Category', new_category_path %>
